@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Neni Farms - Our Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = { /* ... same Tailwind config ... */ }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-farm-green shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" id="logoLink" class="text-2xl font-bold text-white hover:text-farm-green-light transition duration-150 ease-in-out">
+                        Neni Farms
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-5">
+                    <a href="index.html" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-white font-semibold px-3 py-2 rounded-md text-sm font-medium">About Us</a> <a href="practices.html" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Practices</a>
+                    <a href="products.html" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Sheep & Products</a>
+                    <a href="gallery.html" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
+                    <a href="contact.html" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    <a href="login.html" id="loginNavButton" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium">Login</a>
+                    <a href="report.html" id="reportNavButton" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium hidden">Farm Report</a>
+                </nav>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-green-100 hover:text-white hover:bg-farm-green-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                        <span class="sr-only">Open main menu</span>
+                        <svg id="icon-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                        <svg id="icon-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-farm-green" id="mobile-menu">
+             </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h1 class="text-3xl font-bold text-farm-brown mb-6">About Neni Farms</h1>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400/C8E6C9/4CAF50?text=Neni+Farms+Family" alt="Neni Farms Family or Scenic View" class="rounded-lg shadow-md mb-4 md:mb-0">
+                </div>
+                <div>
+                    <p class="text-gray-700 mb-4">
+                        Neni Farms began with a passion for sustainable agriculture and a deep respect for animal welfare. Founded in [Year, e.g., 2010] by the [Family Name, e.g., Neni family], our farm has grown from a small flock to a thriving operation dedicated to raising exceptional sheep.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Our mission is to provide the highest quality sheep products while maintaining a healthy and natural environment for our animals. We practice rotational grazing to ensure our pastures remain lush and nutritious, and our sheep are raised without the routine use of antibiotics or hormones.
+                    </p>
+                </div>
+            </div>
+            <h2 class="text-2xl font-semibold text-farm-brown mt-8 mb-3">Our Philosophy</h2>
+            <p class="text-gray-700 mb-4">
+                At Neni Farms, we believe that happy sheep lead to superior products. We are committed to:
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li><strong>Animal Welfare:</strong> Providing a stress-free environment with ample space, fresh water, and natural forage.</li>
+                <li><strong>Sustainability:</strong> Implementing eco-friendly farming practices that protect and enhance our land.</li>
+                <li><strong>Quality:</strong> Focusing on genetics and nutrition to produce the finest wool and lamb.</li>
+                <li><strong>Community:</strong> Connecting with our customers and sharing our love for farming.</li>
+            </ul>
+            <img src="https://placehold.co/1200x300/A5D6A7/33691E?text=Our+Happy+Flock" alt="Neni Farms Sheep Grazing" class="rounded-lg shadow-md mt-6 w-full h-auto">
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-auto">
+        </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
