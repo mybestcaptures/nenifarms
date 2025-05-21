@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neni Farms - Quality Sheep Farming & Sustainable Practices</title>
+    <script src="https://cdn.tailwindcss.com"></script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"> <script>
+        // Optional: Custom Tailwind configuration (if not fully handled by CDN/build process)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'farm-green': {
+                            DEFAULT: '#4CAF50',
+                            'dark': '#388E3C',
+                            'light': '#C8E6C9'
+                        },
+                        'farm-brown': {
+                            DEFAULT: '#795548'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-farm-green shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" id="logoLink" class="text-2xl font-bold text-white hover:text-farm-green-light transition duration-150 ease-in-out">
+                        Neni Farms
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-5">
+                    <a href="index.html" data-page="homePage" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Home</a>
+                    <a href="about.html" data-page="aboutPage" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">About Us</a>
+                    <a href="practices.html" data-page="practicesPage" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Our Practices</a>
+                    <a href="products.html" data-page="servicesPage" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Our Sheep & Products</a>
+                    <a href="gallery.html" data-page="galleryPage" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Gallery</a>
+                    <a href="contact.html" data-page="contactPage" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Contact</a>
+                    <a href="login.html" data-page="loginPage" id="loginNavButton" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Login</a>
+                    <a href="report.html" data-page="reportPage" id="reportNavButton" class="nav-link text-farm-green-light hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out hidden">Farm Report</a>
+                </nav>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-green-100 hover:text-white hover:bg-farm-green-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition duration-150 ease-in-out">
+                        <span class="sr-only">Open main menu</span>
+                        <svg id="icon-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                        <svg id="icon-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-farm-green" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="nav-link block text-farm-green-light hover:bg-farm-green-dark hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Home</a>
+                <a href="about.html" class="nav-link block text-farm-green-light hover:bg-farm-green-dark hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">About Us</a>
+                <a href="practices.html" class="nav-link block text-farm-green-light hover:bg-farm-green-dark hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Our Practices</a>
+                <a href="products.html" class="nav-link block text-farm-green-light hover:bg-farm-green-dark hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Our Sheep & Products</a>
+                <a href="gallery.html" class="nav-link block text-farm-green-light hover:bg-farm-green-dark hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Gallery</a>
+                <a href="contact.html" class="nav-link block text-farm-green-light hover:bg-farm-green-dark hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Contact</a>
+                <a href="login.html" id="loginNavButtonMobile" class="nav-link block text-farm-green-light hover:bg-farm-green-dark hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Login</a>
+                <a href="report.html" id="reportNavButtonMobile" class="nav-link block text-farm-green-light hover:bg-farm-green-dark hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out hidden">Farm Report</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="farm-hero mb-8">
+            <h1>Welcome to Neni Farms</h1>
+            <p class="mt-2">Dedicated to raising healthy, happy sheep and providing quality products.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-farm-brown mb-4">Your Home for Premium Sheep Farming</h2>
+            <div id="pageContentToSummarize"> <p class="text-gray-700 mb-4">
+                    Neni Farms is a family-owned and operated sheep farm nestled in the rolling hills, committed to sustainable and ethical farming practices. We take pride in raising robust and healthy sheep, focusing on breeds known for their excellent wool quality and tender meat. Our flock enjoys spacious pastures and a natural diet, ensuring their well-being and the superior quality of our products.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Whether you are looking for breeding stock, high-quality wool for your crafting needs, or delicious, locally-raised lamb, Neni Farms is your trusted source. We believe in transparency and are happy to share our farming methods with our valued customers. Explore our website to learn more about our sheep, our products, and our commitment to excellence in sheep farming.
+                </p>
+            </div>
+            <div class="mt-8">
+                <button id="summarizeButton" class="gemini-button inline-flex items-center">
+                    <span id="buttonSpinner" class="loading-spinner hidden"></span>
+                    ✨ Summarize Neni Farms Overview
+                </button>
+                <div id="summaryOutput" class="mt-4 hidden">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Summary:</h3>
+                    <p id="summaryText" class="text-gray-700"></p>
+                </div>
+                <div id="summaryError" class="mt-4 hidden p-3 bg-red-100 text-red-700 rounded-md">
+                    <p>Could not generate summary. Please try again later.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">Neni Farms</h3>
+                    <p class="text-sm text-gray-400">Dedicated to sustainable sheep farming...</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="nav-link text-sm text-gray-400 hover:text-farm-green-light">Home</a></li>
+                        <li><a href="about.html" class="nav-link text-sm text-gray-400 hover:text-farm-green-light">About Us</a></li>
+                        <li><a href="practices.html" class="nav-link text-sm text-gray-400 hover:text-farm-green-light">Our Practices</a></li>
+                        <li><a href="products.html" class="nav-link text-sm text-gray-400 hover:text-farm-green-light">Our Sheep & Products</a></li>
+                        <li><a href="gallery.html" class="nav-link text-sm text-gray-400 hover:text-farm-green-light">Gallery</a></li>
+                        <li><a href="contact.html" class="nav-link text-sm text-gray-400 hover:text-farm-green-light">Contact</a></li>
+                        <li><a href="login.html" id="loginFooterLink" class="nav-link text-sm text-gray-400 hover:text-farm-green-light">Login</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-farm-green-light"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-farm-green-light"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-sm text-gray-400">&copy; <span id="currentYear"></span> Neni Farms. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script> </body>
+</html>
